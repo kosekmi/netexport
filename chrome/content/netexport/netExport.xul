@@ -71,6 +71,11 @@
                                         tooltiptext="netexport.menu.tooltip.includeResponseBodies"
                                         oncommand="Firebug.NetExport.onToggleOption(event, this)"
                                         option="netexport.includeResponseBodies" />
+                                    <menuitem id="netExportIncludeRequestBodies" type="checkbox"
+                                        label="netexport.menu.label.includeRequestBodies"
+                                        tooltiptext="netexport.menu.tooltip.includeRequestBodies"
+                                        oncommand="Firebug.NetExport.onToggleOption(event, this)"
+                                        option="netexport.includeRequestBodies" />
                                     <menuitem id="netExportShowPreview" type="checkbox"
                                         label="netexport.menu.label.Show Preview"
                                         tooltiptext="netexport.menu.tooltip.Show Preview"

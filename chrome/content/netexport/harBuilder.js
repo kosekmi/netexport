@@ -253,7 +253,10 @@ Firebug.NetExport.HARBuilder.prototype =
         }
         else
         {
-            postData.text = text;
+            var includeRequestBodies = Firebug.getPref(prefDomain, "includeRequestBodies");
+            
+            if (includeRequestBodies) postData.text = text;
+            if (!includeRequestBodies) postData.comment = $STR("netexport.export.requestBodyNotIncluded");
         }
 
         if (FBTrace.DBG_NETEXPORT)

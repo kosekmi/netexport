@@ -50,3 +50,6 @@ pref("extensions.firebug.netexport.jsonpCallback", "onInputData");
 
 // Specifies whether the response bodies of requests should be included in the export
 pref("extensions.firebug.netexport.includeResponseBodies", true);
+
+// Specifies whether the request bodies should be included in the export
+pref("extensions.firebug.netexport.includeRequestBodies", true);
